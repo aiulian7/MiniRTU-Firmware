@@ -1,5 +1,4 @@
-from machine import Pin, PWM, SPI
-import time
+from machine import Pin, PWM
 
 PINS = {1: 4, 2: 5, 3: 15, 4: 16, 5: 17, 6: 18, 7: 19, 8: 20,
         9: 21, 10: 22, 11: 23, 12: 24}
