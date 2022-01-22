@@ -1,4 +1,4 @@
-from machine import Pin, PWM
+from machine import Pin, PWM, SPI
 import time
 
 PINS = {1: 4, 2: 5, 3: 15, 4: 16, 5: 17, 6: 18, 7: 19, 8: 20,
@@ -18,7 +18,7 @@ class mgpio:
         pass
     
     def PIN(self, pin):
-        return Pin(PINS.get(pin, None))
+        return PINS.get(pin, None)
     
     def Relay(self, relay_no, relay_state):
         R =  Pin(RELAY.get(relay_no, None), Pin.OUT)  
